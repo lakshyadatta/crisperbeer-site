@@ -6,7 +6,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Crisper">
 <meta property="og:title" content="Crisper - Born in the Himalayas">
-<meta property="og:description" content="Super Premium Strong Beer. Crisp, clean, confidently strong. Why stop at crisp?">
+<meta property="og:description" content="Super Premium Strong Beer. Don't just be. Be-er. Why stop at crisp?">
 <meta property="og:url" content="https://crisperbeer.com/">
 <meta property="og:image" content="https://crisperbeer.com/og-image.jpg">
 <meta property="og:image:width" content="1200">
@@ -21,7 +21,7 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <title>Crisper &mdash; Born in the Himalayas</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="Crisper Super Premium Strong Beer &mdash; brewed with glacier water in the Himalayas of Bhutan. Crisp, clean, confidently strong." />
+<meta name="description" content="Crisper Super Premium Strong Beer &mdash; brewed with glacier water in the Himalayas of Bhutan. Don't just be. Be-er." />
 
 <style>
   :root{
@@ -229,6 +229,37 @@
   .fig.cheers img{aspect-ratio:4/5}
   .fig .fglow{display:none}
 
+  /* ---------- MISSION ---------- */
+  .mission{background:linear-gradient(180deg,var(--paper),var(--snow-2));text-align:center;overflow:hidden}
+  .mission .m-in{max-width:940px;margin:0 auto;padding:0 24px}
+  .mission .eyebrow{justify-content:center}
+  .mission h2.m-head{font-size:clamp(2.6rem,7.6vw,5rem);line-height:1;letter-spacing:-.02em;margin:18px 0 0}
+  .rd{color:var(--red)}
+  .ladder{margin:clamp(38px,7vw,68px) auto 0;display:flex;flex-direction:column;gap:clamp(8px,1.8vw,16px);
+    width:max-content;max-width:100%;font-family:var(--serif)}
+  .rung{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:clamp(12px,3vw,28px);
+    font-size:clamp(1.6rem,6.2vw,2.8rem);line-height:1;color:var(--ink)}
+  .rung .bw{text-align:right}
+  .rung .gw{text-align:left}
+  .rung .aw{color:var(--gold);font-size:.6em;transform:translateY(-.05em)}
+  .rung .er{color:var(--red);display:inline-block;opacity:0;transform:translateX(-.28em);
+    transition:opacity .55s ease,transform .55s ease}
+  .ladder.in .rung:nth-child(1) .er{opacity:1;transform:none;transition-delay:.2s}
+  .ladder.in .rung:nth-child(2) .er{opacity:1;transform:none;transition-delay:.55s}
+  .ladder.in .rung:nth-child(3) .er{opacity:1;transform:none;transition-delay:.9s}
+  .m-body{max-width:46ch;margin:clamp(48px,8vw,82px) auto 0;text-align:left;
+    color:var(--ink-soft);font-size:1.12rem;line-height:1.72}
+  .m-body p{margin:0 0 1.15em}
+  .m-body p.lead{color:var(--ink)}
+  .m-body em{color:var(--ink);font-style:italic}
+  .m-fig{margin:clamp(46px,7vw,78px) auto 0;max-width:740px}
+  .m-fig img{width:100%;height:auto;display:block;border-radius:12px;aspect-ratio:16/10;object-fit:cover;
+    object-position:center 42%;box-shadow:0 34px 66px -26px rgba(4,20,28,.5);border:1px solid rgba(255,255,255,.4)}
+  .m-tribute{font-family:var(--serif);font-size:clamp(1.55rem,4.6vw,2.35rem);line-height:1.32;color:var(--ink);
+    margin:clamp(46px,7.5vw,80px) auto 0;max-width:22ch;letter-spacing:-.012em}
+  .m-leaf{display:block;width:56px;height:auto;margin:clamp(38px,7vw,64px) auto clamp(20px,4vw,30px)}
+  .m-close{font-family:var(--serif);font-weight:700;font-size:clamp(2rem,6.4vw,3.3rem);letter-spacing:-.012em;margin:0}
+
   /* cold macro band */
   .coldband{position:relative;height:min(58vh,540px);overflow:hidden}
   .coldband img{width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block}
@@ -335,6 +366,7 @@
         <img src="assets/leaf.webp" alt="" /><span class="name">Crisper</span>
       </a>
       <nav class="nav-links" aria-label="Primary">
+        <a href="#mission">Mission</a>
         <a href="#origin">Origin</a>
         <a href="#beer">The Beer</a>
         <a href="#serve">The Serve</a>
@@ -350,9 +382,40 @@
       <span class="eyebrow">Super Premium Strong Beer</span>
       <h1>Born in the<span class="it">Himalayas.</span></h1>
       <p class="hero-lede">Brewed with Himalayan glacier water. Clean, cold, and seriously strong &mdash; premium that doesn't act like it. Crisp was only the start.</p>
-      <a class="cta-link light" href="#origin">Discover the story
+      <a class="cta-link light" href="#mission">Discover the story
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
       </a>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="section mission" id="mission">
+    <div class="m-in">
+      <span class="eyebrow reveal">Our Mission</span>
+      <h2 class="m-head reveal">We&rsquo;re here to <span class="rd">be-er.</span></h2>
+
+      <div class="ladder reveal" aria-hidden="true">
+        <div class="rung"><span class="bw">cold</span><span class="aw">&rarr;</span><span class="gw">cold<span class="er">er</span></span></div>
+        <div class="rung"><span class="bw">crisp</span><span class="aw">&rarr;</span><span class="gw">crisp<span class="er">er</span></span></div>
+        <div class="rung"><span class="bw">be</span><span class="aw">&rarr;</span><span class="gw">be<span class="er">-er</span></span></div>
+      </div>
+
+      <div class="m-body reveal">
+        <p class="lead">Yes, we know how beer is spelled. But look what was hiding in there the whole time &mdash; an <span class="rd">-er</span>, right at the end, waiting for someone to lean on it. We leaned.</p>
+        <p>Here&rsquo;s the belief the whole thing is built on: crisp is fine. Genuinely &mdash; crisp is good. Cold, clean, easy to like. But <em>fine</em> was never going to be enough for us, and something tells us it was never quite enough for you either. Fine is where most things stop. It&rsquo;s the polite place to set the pen down and call it a day. We&rsquo;ve just never been any good at stopping there.</p>
+        <p>So we didn&rsquo;t stop at crisp. We went looking for the <span class="rd">-er</span> &mdash; the little more that lives just past the point everyone&rsquo;s agreed is good enough. We went all the way to the Himalayas of Bhutan for glacier water, when perfectly ordinary water would have filled the can just fine. (There&rsquo;s that word again. <em>Fine.</em>) It wasn&rsquo;t to prove a point. It&rsquo;s just how some people are wired.</p>
+        <p>You know the type. You might <em>be</em> the type. The one who takes the scenic route home even when they&rsquo;re tired. Who orders the dish they can&rsquo;t pronounce. Who asks one more question after everyone else has packed up and left. Who reaches the edge of the map, gets curious, and wanders off to see what&rsquo;s past it. It&rsquo;s an old itch &mdash; somebody scratched it thousands of years ago, squinting at grain and water, thinking, <em>let&rsquo;s leave this a while and see what happens.</em> Which, as it turns out, is how the world got beer. So &mdash; thank you, whoever you were. You glorious be-er.</p>
+        <p>We&rsquo;re not talking about ambition here, or hustle, or being impossible to please &mdash; that all sounds exhausting, and this is a beer, not a life coach. It&rsquo;s simpler, and a lot more fun, than that. It&rsquo;s curiosity. Appetite. A cheerful refusal to leave a good thing sitting at good.</p>
+      </div>
+
+      <figure class="m-fig reveal">
+        <img loading="lazy" decoding="async" src="assets/serve_scene.webp" alt="Two people toasting cans of Crisper on a snowy Himalayan ridge, with trekkers climbing the trail below" />
+      </figure>
+
+      <p class="m-tribute reveal">We got here because of people who <span class="rd">-er</span>.<br/>So we made a beer for the <span class="rd">be-ers</span>.</p>
+
+      <img class="m-leaf reveal" src="assets/leaf.webp" alt="" />
+      <p class="m-close reveal">Don&rsquo;t just be. <span class="rd">Be-er.</span></p>
     </div>
   </section>
 
@@ -377,7 +440,7 @@
     <div class="wrap">
       <div class="sec-head">
         <span class="eyebrow reveal">The Beer</span>
-        <h2 class="reveal d1">Crisp. Cold.<br/>Seriously strong.</h2>
+        <h2 class="reveal d1">Crisp was never<br/>the finish line.</h2>
         <p class="body-copy reveal d1" style="max-width:52ch;font-size:1.1rem">An 8% that drinks clean, not heavy &mdash; crisp to the last sip. But crisp is where most beers stop. We kept going: colder, cleaner, sharper &mdash; until crisp became <strong>Crisper</strong>. Four honest ingredients, nothing hidden.</p>
       </div>
       <div class="specs reveal d1">
@@ -400,7 +463,6 @@
     <img loading="lazy" decoding="async" src="assets/cold_band.webp" alt="Extreme close-up of a frosted Crisper can beaded with condensation" />
     <div class="cb-scrim"></div>
     <div class="cb-in">
-      <span class="eyebrow">Cold. Colder. Crisp.</span>
       <p class="cb-line">Why stop at crisp?</p>
     </div>
   </section>
@@ -412,11 +474,11 @@
         <span class="eyebrow on-teal reveal">The Serve</span>
         <h2 class="reveal d1" style="margin-top:16px">Coldest wins.</h2>
         <p class="body-copy reveal d1">Chill it to near-freezing. Pour it tall. Crisper is at its sharpest a few degrees off the ice &mdash; the colder the pour, the crisper the finish.</p>
-        <p class="body-copy reveal d2">Cracked open with friends, at altitude or at sea level, it drinks like the mountains it came from: bright, cold and clean.</p>
+        <p class="body-copy reveal d2">Cracked open at altitude or at sea level, it drinks like the mountains it came from: bright, cold and clean.</p>
         <p class="pull reveal d2">Serve it cold. Serve it slow. Serve it responsibly.</p>
       </div>
       <div class="fig cheers reveal d1">
-        <img loading="lazy" decoding="async" src="assets/serve_scene.webp" alt="Two friends toasting with cans of Crisper on a snowy Himalayan ridge" />
+        <img loading="lazy" decoding="async" src="assets/serve_ice.webp" alt="A frosted can of Crisper standing on a bed of crushed ice, beaded with condensation" />
       </div>
     </div>
   </section>
