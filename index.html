@@ -270,6 +270,9 @@
   .cb-in .eyebrow{color:var(--gold-lite)}
   .cb-line{font-family:var(--serif);color:#fff;font-size:clamp(1.9rem,4.4vw,3.2rem);line-height:1.02;margin-top:12px;
     letter-spacing:-.01em;text-shadow:0 4px 26px rgba(0,0,0,.6);max-width:16ch}
+  .cb-sub{font-family:var(--serif);font-style:italic;color:rgba(245,240,228,.92);
+    font-size:clamp(1.05rem,2.2vw,1.35rem);margin-top:16px;max-width:28ch;text-shadow:0 2px 18px rgba(0,0,0,.6)}
+  .cb-sub .rd{color:var(--red-lift)}
 
   /* spec strip */
   .specs{display:grid;grid-template-columns:repeat(4,1fr);margin-top:58px;
@@ -307,6 +310,9 @@
     text-transform:uppercase;color:var(--gold)}
   .monument .mono-line{position:relative;margin:30px auto 0;max-width:30ch;font-family:var(--serif);
     font-style:italic;font-size:1.22rem;color:var(--ink-soft)}
+  .monument .mono-quip{position:relative;margin:34px auto 0;max-width:24ch;font-family:var(--serif);
+    font-style:italic;font-size:clamp(1.2rem,2.7vw,1.7rem);line-height:1.4;color:var(--ink-soft)}
+  .monument .mono-quip .rd{color:var(--red)}
 
   /* footer */
   footer{background:var(--teal-deep);color:var(--cream);padding-block:66px 40px;position:relative;overflow:hidden}
@@ -369,7 +375,6 @@
         <a href="#mission">Mission</a>
         <a href="#origin">Origin</a>
         <a href="#beer">The Beer</a>
-        <a href="#serve">The Serve</a>
       </nav>
       <span class="nav-tag">XXX Spiritz</span>
     </div>
@@ -464,22 +469,7 @@
     <div class="cb-scrim"></div>
     <div class="cb-in">
       <p class="cb-line">Why stop at crisp?</p>
-    </div>
-  </section>
-
-  <!-- SERVE -->
-  <section class="section glacier" id="serve">
-    <div class="wrap split rev">
-      <div>
-        <span class="eyebrow on-teal reveal">The Serve</span>
-        <h2 class="reveal d1" style="margin-top:16px">Coldest wins.</h2>
-        <p class="body-copy reveal d1">Chill it to near-freezing. Pour it tall. Crisper is at its sharpest a few degrees off the ice &mdash; the colder the pour, the crisper the finish.</p>
-        <p class="body-copy reveal d2">Cracked open at altitude or at sea level, it drinks like the mountains it came from: bright, cold and clean.</p>
-        <p class="pull reveal d2">Serve it cold. Serve it slow. Serve it responsibly.</p>
-      </div>
-      <div class="fig cheers reveal d1">
-        <img loading="lazy" decoding="async" src="assets/serve_ice.webp" alt="A frosted can of Crisper standing on a bed of crushed ice, beaded with condensation" />
-      </div>
+      <p class="cb-sub">The colder the pour, the <span class="rd">crisper</span> the finish.</p>
     </div>
   </section>
 
@@ -489,7 +479,8 @@
       <img class="leaf reveal" src="assets/leaf.webp" alt="" />
       <div class="mono-word reveal d1">Crisper<span class="tm">&reg;</span></div>
       <div class="mono-sub reveal d1">Born in the Himalayas</div>
-      <p class="mono-line reveal d2" style="font-style:normal;color:var(--red);font-weight:600;font-size:clamp(1.35rem,3vw,2rem)">Look for the red leaf.</p>
+      <p class="mono-quip reveal d2">Every beer is crisp.<br/>Only a be-er is <span class="rd">crisper</span>.</p>
+      <p class="mono-line reveal d3" style="font-style:normal;color:var(--red);font-weight:600;font-size:clamp(1.35rem,3vw,2rem)">Look for the red leaf.</p>
     </div>
   </section>
 
